@@ -1,7 +1,7 @@
 import { InvalidAuthDetails, APIError } from "../errors"
 import { fetchActionCreator } from "redux-fetch-helpers"
 
-const BASE_URL = `localhost:3000`
+const BASE_URL = "localhost:3000"
 const API_PATHS = {
     login : "/authenticator/signIn",
 }

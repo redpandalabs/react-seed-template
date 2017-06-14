@@ -1,9 +1,7 @@
 import React, { Component } from "react"
 import {connect} from "react-redux"
-import classnames from "classnames"
-import styles from "./Home.css"
 
-class Home extends Component {
+class AboutUs extends Component {
     static propTypes = {
 
     }
@@ -11,8 +9,8 @@ class Home extends Component {
         return (
             <div>
                 <div className="row">
-                    <div className={classnames("col s12 m12", styles.bluetext)}>
-                        Home Component
+                    <div className="col s12 m12">
+                        AboutUs Component
                     </div>
                 </div>
             </div>
@@ -22,4 +20,4 @@ class Home extends Component {
 
 export default connect(
     state => state,
-)(Home)
+)(AboutUs)

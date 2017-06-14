@@ -2,14 +2,15 @@
 <html lang="en">
     <head>
 
-        <title>CodeWizards</title>
+        <title>React Seed Template</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <link rel="shortcut icon" href="">
-
-        <link href="app.css" rel="stylesheet">
-
+        <!-- <link href="./src/css/materialize.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <% for (var css in htmlWebpackPlugin.files.css) { %>
+        <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+        <% } %>
     </head>
 
     <body class="body">
